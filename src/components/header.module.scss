@@ -11,6 +11,8 @@
   z-index: 1;
   .header__wrapper {
     @include wrapper();
+    display: flex;
+    justify-content: space-between;
     padding: 0 7.2rem;
   }
 }

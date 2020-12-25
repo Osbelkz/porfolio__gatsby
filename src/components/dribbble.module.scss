@@ -1,0 +1,31 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+.dribbble {
+  display: flex;
+
+  .dribbble__wrapper {
+    width: 100%;
+    padding: 12rem 18.2rem;
+    @include wrapper();
+    .title {
+      @include h2();
+      color: $text;
+    }
+    .text {
+      @include body1();
+      margin-top: 2.4rem;
+      max-width: 63.6rem;
+      color: $light_gray;
+      margin-bottom: 4rem;
+    }
+    .button {
+      @include smallButtonStyle();
+      color: $text;
+    }
+    .image {
+      margin-top: 12.4rem;
+      display: block;
+    }
+  }
+}

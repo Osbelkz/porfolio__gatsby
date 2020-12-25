@@ -1,3 +1,4 @@
+@import "variables";
 
 @mixin label1 {
   font-family: Sen;
@@ -60,8 +61,24 @@
 }
 @mixin wrapper {
   max-width: 144rem;
-  display: flex;
-  justify-content: space-between;
   margin: 0 auto;
   box-sizing: border-box;
+}
+@mixin smallButtonStyle {
+  position: relative;
+  @include body2();
+  padding: 0;
+  color: $level1;
+  border: none;
+  background-color: transparent;
+
+  &:after {
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    left: 0;
+    height: 1px;
+    content: "";
+    background-color: $light_gray;
+  }
 }

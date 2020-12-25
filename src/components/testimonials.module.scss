@@ -1,0 +1,64 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+.testimonials {
+  display: flex;
+
+  .testimonials__wrapper {
+    width: 100%;
+    padding: 12rem 7.2rem 0;
+    @include wrapper();
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .description {
+      flex: 0 1 58.8rem;
+      .title {
+        @include h2();
+        color: $text;
+      }
+      .text {
+        margin-top: 2.4rem;
+        @include body1();
+        color: $light_gray;
+      }
+      .button {
+        margin-top: 4rem;
+        @include smallButtonStyle();
+        color: $text;
+      }
+    }
+    .testimonials {
+      flex: 0 0 63.6rem;
+      display: flex;
+      flex-flow: column wrap;
+      .testimonial {
+        margin-bottom: 12rem;
+        .image {
+          display: block;
+        }
+        .inner {
+          padding: 6.4rem;
+          border: 1px solid #5B6876;
+          .text {
+            @include h3();
+            color: $text;
+          }
+
+          .name {
+            margin-top: 6.4rem;
+            @include h4();
+            color: $dark_gray;
+          }
+
+          .position {
+            margin-top: .4rem;
+            @include body1();
+            color: $dark_gray;
+          }
+        }
+
+      }
+    }
+  }
+}

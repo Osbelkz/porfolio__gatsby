@@ -11,6 +11,8 @@ import Skillset from "../components/skillset"
 import Companies from "../components/companies"
 import Projects from "../components/projects"
 import Instagram from "../components/instagram"
+import Dribbble from "../components/dribbble"
+import Testimonials from "../components/testimonials"
 
 const IndexPage = () => (
   <Layout>
@@ -22,6 +24,8 @@ const IndexPage = () => (
     <Companies/>
     <Projects/>
     <Instagram/>
+    <Dribbble/>
+    <Testimonials/>
       <Image />
     <Link to="/page-2/">Go to page 2</Link> <br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
