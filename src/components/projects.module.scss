@@ -1,0 +1,67 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+.projects {
+  display: flex;
+  .projects__wrapper {
+    width: 100%;
+    padding: 12rem 7.2rem 15.2rem;
+    @include wrapper();
+    .projects__inner {
+      column-count: 2;
+      column-gap: 2.4rem;
+      .head, .project {
+        margin-bottom: 2.4rem;
+        page-break-inside: avoid;
+        break-inside: avoid-column;
+      }
+      .head {
+        padding-bottom: 5.6rem;
+        .subtitle {
+          @include h5();
+          color: $light_gray;
+        }
+        .title {
+          @include h2();
+          margin-top: .9rem;
+          color: $text;
+          > span {
+            display: block;
+          }
+        }
+      }
+      .project {
+        background-color: $level1;
+        .image {
+
+        }
+        .description {
+          padding: 3.5rem 3.2rem 4rem;
+          .title {
+            @include h3();
+            color: $text;
+          }
+          .text {
+            @include body1();
+            margin-top: 1.3rem;
+            color: $light_gray;
+          }
+        }
+      }
+      .tail {
+        margin-top: 9.1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: available;
+        .button {
+          @include buttonText();
+          color: $text;
+          padding: 2.4rem 3.2rem;
+          background-color: transparent;
+          border: 1px solid #5221E6;
+        }
+      }
+    }
+  }
+}

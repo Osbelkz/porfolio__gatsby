@@ -8,6 +8,9 @@ import Hero from "../components/hero"
 import Experience from "../components/experience"
 import Philosophy from "../components/philosophy"
 import Skillset from "../components/skillset"
+import Companies from "../components/companies"
+import Projects from "../components/projects"
+import Instagram from "../components/instagram"
 
 const IndexPage = () => (
   <Layout>
@@ -16,6 +19,9 @@ const IndexPage = () => (
     <Experience/>
     <Philosophy/>
     <Skillset/>
+    <Companies/>
+    <Projects/>
+    <Instagram/>
       <Image />
     <Link to="/page-2/">Go to page 2</Link> <br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
