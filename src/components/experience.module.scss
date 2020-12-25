@@ -1,0 +1,73 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+
+.experience {
+
+  .experience__wrapper {
+    width: 100%;
+    padding: 12rem 7.2rem;
+    @include wrapper();
+    flex-direction: column;
+    .experience__subtitle {
+      @include h5();
+      text-transform: uppercase;
+      color: $light_gray;
+      margin: 0;
+    }
+    .experience__title{
+      @include h2();
+      margin-top: 0.8rem;
+      color: $text;
+      span {
+        display: block;
+      }
+    }
+    .row {
+      margin-top: 2.65rem;
+      display: flex;
+      column-gap: 2.4rem;
+      .item {
+        min-width: 41.6rem;
+        display: flex;
+        flex-direction: column;
+        .number {
+          @include label1();
+          color: $light_gray;
+        }
+        .title {
+          @include h3();
+          color: $text;
+        }
+        .description {
+          max-width: 36.8rem;
+          margin-top: 2.2rem;
+          @include body2();
+          color: $light_gray;
+        }
+        &:first-child {
+          .title {
+            span {
+              color: $green_accent;
+            }
+          }
+        }
+        &:nth-child(2) {
+          .title {
+            span {
+              color: $blue_accent;
+            }
+          }
+        }
+        &:last-child {
+          .title {
+            span {
+              color: $pink_accent;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

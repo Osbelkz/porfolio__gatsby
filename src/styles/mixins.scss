@@ -1,0 +1,67 @@
+
+@mixin label1 {
+  font-family: Sen;
+  font-size: 11.7rem;
+  line-height: 14.1rem;
+}
+
+@mixin h1 {
+  font-family: Sen;
+  font-size: 7.8rem;
+  font-weight: bold;
+  line-height: 9.4rem;
+}
+
+@mixin h2 {
+  font-family: Sen;
+  font-size: 5.5rem;
+  font-weight: bold;
+  line-height: 6.6rem;
+}
+@mixin h3 {
+  font-family: Sen;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 150%;
+}
+@mixin h4 {
+  font-family: Sen;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 150%;
+}
+@mixin h5 {
+  font-family: Sen;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 150%;
+}
+@mixin body1 {
+  font-family: Sen;
+  font-size: 1.8rem;
+  line-height: 150%;
+}
+@mixin body2 {
+  font-family: Sen;
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+@mixin overline {
+  font-family: Sen;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 150%;
+}
+@mixin buttonText {
+  font-family: Sen;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 150%;
+}
+@mixin wrapper {
+  max-width: 144rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
