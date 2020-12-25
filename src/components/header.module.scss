@@ -8,6 +8,7 @@
   margin: 0 auto;
   width: 100%;
   height: 8.8rem;
+  z-index: 1;
   .header__wrapper {
     @include wrapper();
     padding: 0 7.2rem;

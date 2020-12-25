@@ -1,0 +1,16 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+
+.skillset {
+
+  .skillset__wrapper {
+    width: 100%;
+    padding: 12rem 7.2rem;
+    @include wrapper();
+    .description {
+      .title {}
+      .text {}
+    }
+  }
+}
