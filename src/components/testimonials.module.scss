@@ -6,7 +6,7 @@
 
   .testimonials__wrapper {
     width: 100%;
-    padding: 12rem 7.2rem 0;
+    padding: 12rem 7.2rem;
     @include wrapper();
     display: flex;
     flex-wrap: wrap;
@@ -57,7 +57,14 @@
             color: $dark_gray;
           }
         }
-
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &:not(:first-child) {
+          .text {
+            line-height: 120%;
+          }
+        }
       }
     }
   }

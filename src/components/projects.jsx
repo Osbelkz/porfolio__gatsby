@@ -8,7 +8,7 @@ import designPhoto from "../images/projects/design.png"
 
 const Projects = () => {
   return (
-    <section className={styles.projects}>
+    <section className={styles.projects} id={"projects"}>
       <div className={styles.projects__wrapper}>
         <div className={styles.projects__inner}>
           <div className={styles.head}>

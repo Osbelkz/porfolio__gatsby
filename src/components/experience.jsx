@@ -4,7 +4,7 @@ import styles from "./experience.module.scss"
 
 const Experience = () => {
   return (
-    <section className={styles.experience}>
+    <section className={styles.experience} id={"experience"}>
       <div className={styles.experience__wrapper}>
         <h5 className={styles.experience__subtitle}>work experience</h5>
         <h2 className={styles.experience__title}>

@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import styles from "./header.module.scss"
 import headerLogo from "../images/svg/Vector.svg"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const Header = ({ siteTitle }) => (
   <header className={styles.header}>
@@ -13,10 +14,10 @@ const Header = ({ siteTitle }) => (
       </Link>
       <nav className={styles.nav}>
         <ul className={styles.list}>
-          <li className={styles.item}><a href="">Experience</a></li>
-          <li className={styles.item}><a href="">Work</a></li>
-          <li className={styles.item}><a href="">Photography</a></li>
-          <li className={styles.item}><a href="">Contact</a></li>
+          <li className={styles.item}><AnchorLink  to={"/#experience"} title={"Experience"} /></li>
+          <li className={styles.item}><AnchorLink  to={"/#projects"} title={"Work"}  /></li>
+          <li className={styles.item}><AnchorLink  to={"/#photography"} title={"Photography"}  /></li>
+          <li className={styles.item}><AnchorLink  to={"/#contacts"} title={"Contact"} /></li>
         </ul>
       </nav>
     </div>

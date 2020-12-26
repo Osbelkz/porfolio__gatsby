@@ -13,6 +13,8 @@ import Projects from "../components/projects"
 import Instagram from "../components/instagram"
 import Dribbble from "../components/dribbble"
 import Testimonials from "../components/testimonials"
+import Photography from "../components/photography"
+import Contacts from "../components/contacts"
 
 const IndexPage = () => (
   <Layout>
@@ -26,9 +28,11 @@ const IndexPage = () => (
     <Instagram/>
     <Dribbble/>
     <Testimonials/>
-      <Image />
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <Photography/>
+    <Contacts/>
+    {/*  <Image />*/}
+    {/*<Link to="/page-2/">Go to page 2</Link> <br />*/}
+    {/*<Link to="/using-typescript/">Go to "Using TypeScript"</Link>*/}
   </Layout>
 )
 

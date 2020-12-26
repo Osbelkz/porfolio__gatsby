@@ -1,0 +1,61 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+.footer {
+  background-color: $level1;
+  .footer__wrapper {
+    width: 100%;
+    padding: 8rem 7.2rem;
+    @include wrapper();
+    .body {
+      display: flex;
+      .about {
+        flex: 0 1 50%;
+        .logo {
+          width: 13.1rem;
+          >img {
+            display: block;
+            width: 100%;
+          }
+        }
+        .social_networks {
+          margin-top: 3.2rem;
+          display: flex;
+          .social_network {
+            display: flex;
+            width: 2.4rem;
+            height: 2.4rem;
+            justify-content: center;
+            align-items: center;
+            margin-right: 1.6rem;
+          }
+        }
+      }
+      .nav {
+        flex: 0 1 50%;
+        display: flex;
+        justify-content: space-evenly;
+        .menu {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          .link {
+            @include body2();
+            padding: 1.2rem;
+            > a {
+              color: $text;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+    .copyright {
+      margin-top: 4.6rem;
+      .text {
+        @include body2();
+        color: $light_gray;
+      }
+    }
+  }
+}

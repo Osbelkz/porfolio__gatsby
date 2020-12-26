@@ -1,0 +1,52 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+.contacts {
+  .contacts__wrapper {
+    width: 100%;
+    padding: 12rem 7.2rem;
+    @include wrapper();
+    display: flex;
+    justify-content: center;
+    .description {
+      .title {
+        @include h2();
+        color: $text;
+      }
+      .text {
+        @include body1();
+        margin-top: 2.4rem;
+        color: $light_gray;
+        max-width: 52.6rem;
+      }
+    }
+    .contact_form {
+      display: flex;
+      flex: 0 1 52.6rem;
+      flex-direction: column;
+      margin-left: 2.4rem;
+      label {
+        @include body2();
+        color: $text;
+      }
+      input, textarea {
+        margin-top: .8rem;
+        background-color: $level1;
+        border: none;
+        height: 5rem;
+        margin-bottom: 4rem;
+      }
+      textarea {
+        height: 10rem;
+      }
+      button {
+        @include buttonText();
+        text-transform: uppercase;
+        background-color: $primary;
+        padding: 2.4rem 0;
+        border: none;
+        color: $text;
+      }
+    }
+  }
+}

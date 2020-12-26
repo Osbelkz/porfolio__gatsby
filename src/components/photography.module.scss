@@ -1,0 +1,43 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+.photography {
+  display: flex;
+
+  .photography__wrapper {
+    width: 100%;
+    padding: 12rem 7.2rem;
+    @include wrapper();
+    .title {
+      @include h2();
+      color: $text;
+    }
+    .text {
+      @include body1();
+      margin-top: 2.4rem;
+      color: $light_gray;
+      max-width: 55.8rem;
+    }
+    .buttons {
+      margin-top: 6.2rem;
+      display: flex;
+
+      .button {
+        @include regularButtonStyle();
+        margin-right: 2.4rem;
+      }
+    }
+    .images {
+      margin-top: 4rem;
+      display: flex;
+      flex-wrap: wrap;
+      > img {
+        margin-right: 2.4rem;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+    }
+  }
+}
