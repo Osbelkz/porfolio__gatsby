@@ -9,10 +9,10 @@
     padding: 12rem 7.2rem;
     @include wrapper();
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     .description {
       flex: 0 1 58.8rem;
+      margin-right: 2.4rem;
       .title {
         @include h2();
         color: $text;
@@ -29,7 +29,7 @@
       }
     }
     .testimonials {
-      flex: 0 0 63.6rem;
+      flex: 0 1 63.6rem;
       display: flex;
       flex-flow: column wrap;
       .testimonial {

@@ -8,7 +8,7 @@ const Experience = () => {
       <div className={styles.experience__wrapper}>
         <h5 className={styles.experience__subtitle}>work experience</h5>
         <h2 className={styles.experience__title}>
-          <span>Companies I have worked</span>
+          <span>Companies I have worked </span>
           <span>for in the past</span>
         </h2>
         <div className={styles.row}>

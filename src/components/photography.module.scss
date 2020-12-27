@@ -6,7 +6,7 @@
 
   .photography__wrapper {
     width: 100%;
-    padding: 12rem 7.2rem;
+    padding: 12rem 7.2rem 9.6rem;
     @include wrapper();
     .title {
       @include h2();
@@ -33,10 +33,18 @@
       flex-wrap: wrap;
       > img {
         margin-right: 2.4rem;
+        margin-bottom: 2.4rem;
         &:last-child {
           margin-right: 0;
         }
       }
+
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .experience {
+    .experience__wrapper {
 
     }
   }

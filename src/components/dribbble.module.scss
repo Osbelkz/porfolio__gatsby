@@ -6,8 +6,8 @@
 
   .dribbble__wrapper {
     width: 100%;
-    padding: 12rem 18.2rem;
     @include wrapper();
+    padding: 12rem 18.2rem;
     .title {
       @include h2();
       color: $text;

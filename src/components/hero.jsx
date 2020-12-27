@@ -1,6 +1,7 @@
 import React from "react"
 import styles from "./hero.module.scss"
 import photo from "../images/hero/photo.png"
+import hero from "../images/hero/hero.png"
 
 
 const Hero = () => {
@@ -8,9 +9,7 @@ const Hero = () => {
     <section className={styles.hero}>
       <div className={styles.hero__wrapper}>
         <div className={styles.row}>
-          <div className={styles.photo}>
-            <img src={photo} alt="" />
-          </div>
+          <img className={styles.photo} src={hero}/>
           <div className={styles.description}>
             <div className={styles.title}>
               <span>I’m Robin Williams.</span>

@@ -28,7 +28,7 @@
       display: flex;
       column-gap: 2.4rem;
       .item {
-        min-width: 41.6rem;
+        flex: 0 1 41.6rem;
         display: flex;
         flex-direction: column;
         .number {
@@ -67,7 +67,29 @@
           }
         }
       }
-
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .experience {
+    .experience__wrapper {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+      .experience__title{
+        span {
+          display: inline;
+        }
+      }
+      .row {
+        .item {
+          .title {
+            max-width: 19.7rem;
+          }
+          .description {
+            max-width: 19.7rem;
+          }
+        }
+      }
     }
   }
 }

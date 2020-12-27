@@ -2,12 +2,11 @@
 @import "src/styles/mixins";
 
 .hero {
-
   .hero__wrapper {
+    @include wrapper();
     width: 100%;
     position: relative;
-    padding-top: 8.6rem;
-    @include wrapper();
+    padding: 8.6rem 0 0;
     .rectangle {
       position: absolute;
       z-index: -10;
@@ -24,26 +23,18 @@
       margin-right: 4rem;
       display: flex;
       .photo {
-
         flex: 1 1 75rem;
-        img {
-          display: block;
-          max-width: 100%;
-          height: auto;
-        }
-
+        object-fit: cover;
       }
       .description {
-        flex: 1 0 73.8rem;
+        flex: 1 1 73.8rem;
         margin-left: -8.8rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         color: $text;
         .title{
-          font-size: 7.8rem;
-          font-weight: bold;
-          line-height: 9.4rem;
+          @include h1();
           > span {
             display: block;
             &:last-child {
@@ -58,6 +49,14 @@
       }
     }
   }
-
-
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    .hero__wrapper {
+      padding: 8.6rem 0;
+      .row {
+        padding-bottom: 0;
+      }
+    }
+  }
 }

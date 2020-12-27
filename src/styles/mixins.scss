@@ -11,6 +11,9 @@
   font-size: 7.8rem;
   font-weight: bold;
   line-height: 9.4rem;
+  @media screen and (max-width: 768px){
+    @include h2()
+  }
 }
 
 @mixin h2 {
@@ -61,8 +64,14 @@
 }
 @mixin wrapper {
   max-width: 144rem;
+  padding-left: 7.2rem;
+  padding-right: 7.2rem;
   margin: 0 auto;
   box-sizing: border-box;
+  @media screen and (max-width: 768px) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 }
 @mixin smallButtonStyle {
   position: relative;

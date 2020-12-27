@@ -16,9 +16,9 @@ const Instagram = () => {
             Follow me on IG
           </button>
         </div>
-        <div className={styles.img}>
-          <img src={airplane} alt="" />
-        </div>
+          <img
+            className={styles.img}
+            src={airplane} alt="" />
       </div>
     </section>
   )

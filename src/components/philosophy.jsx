@@ -1,6 +1,7 @@
 import React from "react"
 import styles from "./philosophy.module.scss"
 import glass_ball from "../images/philosophy/glass_ball.jpg"
+import glass_ball_w320 from "../images/philosophy/glass_ball_w320.png"
 
 const Philosophy = () => {
   return (
@@ -17,9 +18,7 @@ const Philosophy = () => {
             More about me
           </button>
         </div>
-        <div className={styles.img}>
-          <img src={glass_ball} alt="" />
-        </div>
+          <img className={styles.img} src={glass_ball_w320} alt="" />
       </div>
     </section>
   )

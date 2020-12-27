@@ -12,15 +12,15 @@
     flex-wrap: wrap;
     column-gap: 7.2rem;
     .description {
-      flex: 0 1 auto;
+      flex: 0 1 36.8rem;
       .title {
         @include h2();
         color: $text;
       }
       .text {
         margin-top: 2.4rem;
+        margin-bottom: 4.8rem;
         @include body1();
-        max-width: 36.8rem;
         color: $light_gray;
       }
     }
@@ -44,6 +44,24 @@
           @include body2();
           max-width: 36.8rem;
           color: $light_gray;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .skillset {
+    .skillset__wrapper {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+      .description {
+        flex: 0 1 auto;
+      }
+      .skills {
+        .skill {
+          .text {
+            max-width: 28.4rem;
+          }
         }
       }
     }

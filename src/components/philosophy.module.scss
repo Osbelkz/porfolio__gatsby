@@ -6,13 +6,11 @@
 
   .philosophy__wrapper {
     @include wrapper();
-    width: 100%;
-    height: 60rem;
     display: flex;
-
+    padding: 0;
     .text {
       flex: 1 1 50%;
-      padding: 12rem 7.2rem;
+      padding: 12rem 7.2rem 12.4rem;
       background-color: $peach_accent;
 
       .title {
@@ -24,16 +22,31 @@
         margin-top: 2.4rem;
         @include body1();
         color: $dark_gray;
-        margin-bottom: 13.4rem;
       }
 
       .button {
         @include smallButtonStyle();
+        margin-top: 13.4rem;
       }
     }
 
     .img {
       flex: 1 1 50%;
+      max-width: 50%;
+      object-fit: cover;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .philosophy {
+    .philosophy__wrapper {
+      padding: 0;
+      .text {
+        padding: 8rem 4rem;
+        .button {
+          margin-top: 6.8rem;
+        }
+      }
     }
   }
 }
