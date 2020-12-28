@@ -24,6 +24,7 @@
 
       .button {
         @include regularButtonStyle();
+        padding: 1.2rem 1.6rem;
         margin-right: 2.4rem;
       }
     }

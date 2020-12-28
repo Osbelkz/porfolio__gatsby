@@ -11,7 +11,7 @@
   font-size: 7.8rem;
   font-weight: bold;
   line-height: 9.4rem;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     @include h2()
   }
 }
@@ -22,46 +22,54 @@
   font-weight: bold;
   line-height: 6.6rem;
 }
+
 @mixin h3 {
   font-family: Sen;
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 150%;
 }
+
 @mixin h4 {
   font-family: Sen;
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 150%;
 }
+
 @mixin h5 {
   font-family: Sen;
   font-size: 1.6rem;
   font-weight: bold;
   line-height: 150%;
 }
+
 @mixin body1 {
   font-family: Sen;
   font-size: 1.8rem;
   line-height: 155%;
 }
+
 @mixin body2 {
   font-family: Sen;
   font-size: 1.6rem;
   line-height: 150%;
 }
+
 @mixin overline {
   font-family: Sen;
   font-size: 1.6rem;
   font-weight: bold;
   line-height: 150%;
 }
+
 @mixin buttonText {
   font-family: Sen;
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 150%;
 }
+
 @mixin wrapper {
   max-width: 144rem;
   padding-left: 7.2rem;
@@ -77,32 +85,46 @@
     padding-right: 2rem;
   }
 }
-@mixin smallButtonStyle {
+
+@mixin smallButtonStyle($textColor, $underlineColor, $hoverTextColor) {
   position: relative;
   @include body2();
   padding: 0;
-  color: $level1;
+  color: $textColor;
   border: none;
   background-color: transparent;
-
+  z-index: 1;
+  cursor: pointer;
   &:after {
     position: absolute;
+    z-index: -1;
     right: 0;
     bottom: -3px;
     left: 0;
     height: 1px;
     content: "";
-    background-color: $light_gray;
+    background-color: $underlineColor;
+    transition: 0.3s ease all;
+  }
+  &:hover {
+    color: $hoverTextColor;
+
+    &:after {
+      bottom: -3px;
+      height: 24px;
+    }
   }
 }
+
 @mixin regularButtonStyle {
   @include buttonText();
   color: $text;
-  padding: 1.2rem 1.6rem;
   background-color: transparent;
   box-shadow: inset 0 0 0 1px $primary;
   outline: none;
   border: none;
+  cursor: pointer;
+  transition: 0.3s ease background-color;
   &:hover {
     background-color: $primary;
   }

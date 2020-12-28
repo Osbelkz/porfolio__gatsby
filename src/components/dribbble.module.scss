@@ -20,8 +20,7 @@
       margin-bottom: 4rem;
     }
     .button {
-      @include smallButtonStyle();
-      color: $text;
+      @include smallButtonStyle($text, $light_gray, $text);
     }
     .image {
       margin-top: 12.4rem;

@@ -26,7 +26,7 @@
       }
 
       .button {
-        @include smallButtonStyle();
+        @include smallButtonStyle($level1, $light_gray, $text);
         margin-top: 13.4rem;
       }
     }

@@ -5,8 +5,28 @@ import phonePhoto from "../images/projects/phone.png"
 import coinViewPhoto from "../images/projects/coinview.png"
 import designPhoto from "../images/projects/design.png"
 
-
+const Project = ({photo, title, text}) => {
+  return <div className={styles.project}>
+    <img className={styles.image} src={photo} alt="" />
+    <div className={styles.description}>
+      <h3 className={styles.title}>
+        {title}
+      </h3>
+      <p className={styles.text}>
+        {text}
+      </p>
+    </div>
+  </div>
+}
 const Projects = () => {
+
+  const projects = [
+    {photo: laptopPhoto, title: "Restaurant Website Design", text: "I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one."},
+    {photo: phonePhoto, title: "Restaurant Website Design", text: "I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one."},
+    {photo: coinViewPhoto, title: "Restaurant Website Design", text: "I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one."},
+    {photo: designPhoto, title: "Restaurant Website Design", text: "I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one."},
+  ]
+
   return (
     <section className={styles.projects} id={"projects"}>
       <div className={styles.projects__wrapper}>
@@ -20,54 +40,9 @@ const Projects = () => {
               <span>for the past 8 years</span>
             </h2>
           </div>
-          <div className={styles.project}>
-            <img className={styles.image} src={laptopPhoto} alt="" />
-            <div className={styles.description}>
-              <h3 className={styles.title}>
-                Restaurant Website Design
-              </h3>
-              <p className={styles.text}>
-                I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS.
-                This project lasted for 4 months and was a very challenging one.
-              </p>
-            </div>
-          </div>
-          <div className={styles.project}>
-            <img className={styles.image} src={phonePhoto} alt="" />
-            <div className={styles.description}>
-              <h3 className={styles.title}>
-                Restaurant Website Design
-              </h3>
-              <p className={styles.text}>
-                I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS.
-                This project lasted for 4 months and was a very challenging one.
-              </p>
-            </div>
-          </div>
-          <div className={styles.project}>
-            <img className={styles.image} src={coinViewPhoto} alt="" />
-            <div className={styles.description}>
-              <h3 className={styles.title}>
-                Restaurant Website Design
-              </h3>
-              <p className={styles.text}>
-                I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS.
-                This project lasted for 4 months and was a very challenging one.
-              </p>
-            </div>
-          </div>
-          <div className={styles.project}>
-            <img className={styles.image} src={designPhoto} alt="" />
-            <div className={styles.description}>
-              <h3 className={styles.title}>
-                Restaurant Website Design
-              </h3>
-              <p className={styles.text}>
-                I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS.
-                This project lasted for 4 months and was a very challenging one.
-              </p>
-            </div>
-          </div>
+          {projects.map(project => {
+            return <Project photo={project.photo} title={project.title} text={project.text} />
+          })}
           <div className={styles.tail}>
             <button className={styles.button}>VIEW ALL PROJECTS</button>
           </div>

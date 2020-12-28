@@ -2,6 +2,11 @@ import React from "react"
 import styles from "./contacts.module.scss"
 
 const Contacts = () => {
+
+  const onSubmit = (e) => {
+    e.preventDefault()
+  }
+
   return (
     <section className={styles.contacts} id={"contacts"}>
       <div className={styles.contacts__wrapper}>
@@ -18,7 +23,7 @@ const Contacts = () => {
           <input type="email" id="femail" name="femail" />
           <label htmlFor="fmessage">Message</label>
           <textarea id="fmessage" name="fmessage"/>
-          <button>Let’s get started</button>
+          <button onClick={onSubmit}>Let’s get started</button>
         </form>
       </div>
     </section>
