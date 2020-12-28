@@ -50,3 +50,19 @@
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .contacts {
+    .contacts__wrapper {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+      .text {
+        max-width: 100%;
+      }
+      .images {
+        margin-top: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

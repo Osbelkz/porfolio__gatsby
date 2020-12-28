@@ -23,11 +23,12 @@
         margin-top: 2.4rem;
         @include body1();
         color: $dark_gray;
-        margin-bottom: 13.4rem;
+
       }
 
       .button {
         @include smallButtonStyle();
+        margin-top: 13.4rem;
       }
     }
 
@@ -35,6 +36,17 @@
       flex: 1 1 50%;
       max-width: 50%;
       object-fit: cover;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .instagram {
+
+    .instagram__wrapper {
+      padding: 0;
+      .text {
+        padding: 8rem 4rem;
+      }
     }
   }
 }

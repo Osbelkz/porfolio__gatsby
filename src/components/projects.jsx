@@ -1,5 +1,5 @@
 import React from "react"
-import styles from './projects.module.scss'
+import styles from "./projects.module.scss"
 import laptopPhoto from "../images/projects/laptop.png"
 import phonePhoto from "../images/projects/phone.png"
 import coinViewPhoto from "../images/projects/coinview.png"
@@ -16,59 +16,55 @@ const Projects = () => {
               MY PROJECTS
             </h5>
             <h2 className={styles.title}>
-              <span>Work that I’ve done</span>
+              <span>Work that I’ve done </span>
               <span>for the past 8 years</span>
             </h2>
           </div>
           <div className={styles.project}>
-            <div className={styles.image}>
-              <img src={laptopPhoto} alt="" />
-            </div>
+            <img className={styles.image} src={laptopPhoto} alt="" />
             <div className={styles.description}>
               <h3 className={styles.title}>
                 Restaurant Website Design
               </h3>
               <p className={styles.text}>
-                I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.
+                I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS.
+                This project lasted for 4 months and was a very challenging one.
               </p>
             </div>
           </div>
           <div className={styles.project}>
-            <div className={styles.image}>
-              <img src={phonePhoto} alt="" />
-            </div>
+            <img className={styles.image} src={phonePhoto} alt="" />
             <div className={styles.description}>
               <h3 className={styles.title}>
                 Restaurant Website Design
               </h3>
               <p className={styles.text}>
-                I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.
+                I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS.
+                This project lasted for 4 months and was a very challenging one.
               </p>
             </div>
           </div>
           <div className={styles.project}>
-          <div className={styles.image}>
-            <img src={coinViewPhoto} alt="" />
-          </div>
-          <div className={styles.description}>
-            <h3 className={styles.title}>
-              Restaurant Website Design
-            </h3>
-            <p className={styles.text}>
-              I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.
-            </p>
-          </div>
-        </div>
-          <div className={styles.project}>
-            <div className={styles.image}>
-              <img src={designPhoto} alt="" />
-            </div>
+            <img className={styles.image} src={coinViewPhoto} alt="" />
             <div className={styles.description}>
               <h3 className={styles.title}>
                 Restaurant Website Design
               </h3>
               <p className={styles.text}>
-                I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.
+                I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS.
+                This project lasted for 4 months and was a very challenging one.
+              </p>
+            </div>
+          </div>
+          <div className={styles.project}>
+            <img className={styles.image} src={designPhoto} alt="" />
+            <div className={styles.description}>
+              <h3 className={styles.title}>
+                Restaurant Website Design
+              </h3>
+              <p className={styles.text}>
+                I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS.
+                This project lasted for 4 months and was a very challenging one.
               </p>
             </div>
           </div>

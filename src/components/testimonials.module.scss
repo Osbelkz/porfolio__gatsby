@@ -35,6 +35,8 @@
       .testimonial {
         margin-bottom: 12rem;
         .image {
+          height: 36rem;
+          object-fit: cover;
           display: block;
         }
         .inner {
@@ -62,7 +64,28 @@
         }
         &:not(:first-child) {
           .text {
-            line-height: 120%;
+            line-height: 121%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .testimonials {
+    .testimonials__wrapper {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+      .description {
+        flex: 1 1 50%;
+        margin-right: 2.4rem;
+      }
+      .testimonials {
+        flex: 1 1 50%;
+        .testimonial {
+          margin-bottom: 6.4rem;
+          .inner {
+            padding: 3.2rem;
           }
         }
       }

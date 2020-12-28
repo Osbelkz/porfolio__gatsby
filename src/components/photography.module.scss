@@ -31,21 +31,29 @@
       margin-top: 4rem;
       display: flex;
       flex-wrap: wrap;
+      gap: 2.4rem;
       > img {
-        margin-right: 2.4rem;
-        margin-bottom: 2.4rem;
-        &:last-child {
-          margin-right: 0;
-        }
-      }
+        height: 42rem;
+        object-fit: cover;
+        flex: 1 0 auto;
 
+      }
     }
   }
 }
 @media screen and (max-width: 768px) {
-  .experience {
-    .experience__wrapper {
-
+  .photography {
+    .photography__wrapper {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+      .text {
+        max-width: 100%;
+      }
+      .images {
+        margin-top: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+      }
     }
   }
 }

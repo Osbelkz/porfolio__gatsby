@@ -12,3 +12,11 @@
     border: 1px solid $level1;
   }
 }
+@media screen and (max-width: 768px) {
+  .companies {
+    flex-wrap: wrap;
+    .company {
+      flex: 1 1 auto;
+    }
+  }
+}
