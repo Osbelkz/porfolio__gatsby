@@ -3,23 +3,26 @@
 
 .contacts {
   .contacts__wrapper {
-    width: 100%;
-    padding: 12rem 7.2rem;
-    @include wrapper();
     display: flex;
     justify-content: center;
+    @include wrapper();
+    width: 100%;
+    padding: 12rem 7.2rem;
+
     .description {
       .title {
         @include h2();
         color: $text;
       }
+
       .text {
         @include body1();
+        max-width: 52.6rem;
         margin-top: 2.4rem;
         color: $light_gray;
-        max-width: 52.6rem;
       }
     }
+
     .contact_form {
       display: flex;
       flex: 0 1 52.6rem;
@@ -29,39 +32,73 @@
         @include body2();
         color: $text;
       }
+
       input, textarea {
-        margin-top: .8rem;
-        background-color: $level1;
-        border: none;
         height: 5rem;
+        margin-top: .8rem;
         margin-bottom: 4rem;
+        border: none;
+        background-color: $level1;
       }
+
       textarea {
         height: 10rem;
+        resize: none;
       }
+
       button {
         @include buttonText();
-        text-transform: uppercase;
-        background-color: $primary;
         padding: 2.4rem 0;
-        border: none;
+        text-transform: uppercase;
         color: $text;
+        border: none;
+        background-color: $primary;
       }
     }
   }
 }
+
 @media screen and (max-width: 768px) {
   .contacts {
     .contacts__wrapper {
       padding-top: 8rem;
       padding-bottom: 8rem;
-      .text {
-        max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .contacts {
+    .contacts__wrapper {
+      flex-direction: column;
+      padding-top: 4.8rem;
+      padding-bottom: 4.8rem;
+      .description {
+        .title {
+          @include heading_mobile();
+        }
+        margin-bottom: 4.8rem;
       }
-      .images {
-        margin-top: 4rem;
-        display: flex;
-        flex-wrap: wrap;
+      .contact_form {
+        margin-left: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .contacts {
+    .contacts__wrapper {
+      flex-direction: column;
+      padding-top: 4.8rem;
+      padding-bottom: 4.8rem;
+      .description {
+        .title {
+          @include heading_mobile();
+        }
+        margin-bottom: 4.8rem;
+      }
+      .contact_form {
+        margin-left: 0;
       }
     }
   }

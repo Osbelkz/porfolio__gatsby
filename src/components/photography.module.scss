@@ -6,7 +6,7 @@
 
   .photography__wrapper {
     width: 100%;
-    padding: 12rem 7.2rem 9.6rem;
+    padding: 12rem 7.2rem 12rem;
     @include wrapper();
     .title {
       @include h2();
@@ -36,7 +36,10 @@
         height: 42rem;
         object-fit: cover;
         flex: 1 0 auto;
-
+        transition: 0.3s ease transform;
+        &:hover {
+          transform: scale(1.05);
+        }
       }
     }
   }
@@ -53,6 +56,33 @@
         margin-top: 4rem;
         display: flex;
         flex-wrap: wrap;
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .photography {
+    .photography__wrapper {
+      padding-top: 4.8rem;
+      padding-bottom: 4.8rem;
+      flex-direction: column;
+      .title {
+        @include heading_mobile();
+      }
+      .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -1.2rem;
+        margin-right: -1.2rem;
+
+        .button {
+          flex: 1 1;
+          max-width: 14.8rem;
+          margin: 1.2rem;
+          //&:nth-child(2n-1) {
+          //  margin-right: 2.4rem;
+          //}
+        }
       }
     }
   }

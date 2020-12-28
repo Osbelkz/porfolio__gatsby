@@ -89,6 +89,7 @@
 
       .projects__inner {
         column-count: 1;
+
         .head {
           padding-bottom: 3.2rem;
 
@@ -117,12 +118,33 @@
             height: 62rem;
             object-fit: cover;
           }
+
           &:last-child {
             margin-bottom: 0;
           }
         }
+
         .tail {
           display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects {
+
+    .projects__wrapper {
+      padding-top: 6.4rem;
+      padding-bottom: 3.8rem;
+      .projects__inner {
+        .head {
+          .subtitle {
+          }
+          .title {
+            @include heading_mobile();
+          }
         }
       }
     }

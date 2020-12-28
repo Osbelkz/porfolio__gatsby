@@ -93,3 +93,29 @@
     }
   }
 }
+@media screen and (max-width: 650px) {
+  .experience {
+    .experience__wrapper {
+      padding-top: 4.8rem;
+      padding-bottom: 4.8rem;
+      .experience__title{
+        @include heading_mobile();
+        span {
+          display: inline;
+        }
+      }
+      .row {
+        flex-direction: column;
+        .item {
+          flex: 1 1;
+          .title {
+            max-width: fit-content;
+          }
+          .description {
+            max-width: fit-content;
+          }
+        }
+      }
+    }
+  }
+}

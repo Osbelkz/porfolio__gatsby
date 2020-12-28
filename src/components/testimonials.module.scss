@@ -11,8 +11,9 @@
     display: flex;
     justify-content: space-between;
     .description {
-      flex: 0 1 58.8rem;
+      flex: 0 1 50%;
       margin-right: 2.4rem;
+      padding-right: 4.8rem;
       .title {
         @include h2();
         color: $text;
@@ -29,7 +30,7 @@
       }
     }
     .testimonials {
-      flex: 0 1 63.6rem;
+      flex: 0 1 50%;
       display: flex;
       flex-flow: column wrap;
       .testimonial {
@@ -40,7 +41,7 @@
           display: block;
         }
         .inner {
-          padding: 6.4rem;
+          padding: 6.4rem 6.4rem 6.2rem;
           border: 1px solid #5B6876;
           .text {
             @include h3();
@@ -87,6 +88,28 @@
           .inner {
             padding: 3.2rem;
           }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .testimonials {
+    .testimonials__wrapper {
+      padding-top: 4.8rem;
+      padding-bottom: 4.8rem;
+      flex-direction: column;
+      .description {
+        margin-bottom: 6.4rem;
+        margin-right: 0;
+        padding-right: 0;
+        .title {
+          @include heading_mobile();
+        }
+      }
+      .testimonials {
+        .testimonial {
+          margin-bottom: 4.8rem;
         }
       }
     }

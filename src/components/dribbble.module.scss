@@ -41,3 +41,18 @@
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .dribbble {
+
+    .dribbble__wrapper {
+      padding-top: 6.4rem;
+      padding-bottom: 6.4rem;
+      .title {
+        @include heading_mobile();
+      }
+      .image {
+        margin-top: 6.8rem;
+      }
+    }
+  }
+}

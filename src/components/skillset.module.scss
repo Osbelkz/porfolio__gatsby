@@ -5,18 +5,22 @@
 .skillset {
 
   .skillset__wrapper {
-    width: 100%;
-    padding: 12rem 7.2rem;
-    @include wrapper();
     display: flex;
     flex-wrap: wrap;
-    column-gap: 7.2rem;
+    @include wrapper();
+    width: 100%;
+    padding: 12rem 7.2rem;
+
     .description {
-      flex: 0 1 36.8rem;
+      //flex: 0 1 36.8rem;
+      flex: 1 1;
+      padding-right: 7.2rem;
+
       .title {
         @include h2();
         color: $text;
       }
+
       .text {
         margin-top: 2.4rem;
         margin-bottom: 4.8rem;
@@ -24,43 +28,91 @@
         color: $light_gray;
       }
     }
+
     .skills {
       display: flex;
-      flex-flow: row wrap;
-      column-gap: 7.2rem;
+      //flex-flow: row wrap;
+
+      flex: 1 0 66%;
+      flex-wrap: wrap;
       row-gap: 4.8rem;
-      flex: 1 1 66%;
+
       .skill {
+        flex: 1 1 50%;
+        padding-right: 7.2rem;
+
         .image {
 
         }
+
         .title {
           margin-top: 1.9rem;
           @include h3();
           color: $text;
         }
+
         .text {
-          margin-top: 1.2rem;
-          @include body2();
           max-width: 36.8rem;
+          @include body2();
+          margin-top: 1.2rem;
           color: $light_gray;
         }
       }
     }
   }
 }
+
 @media screen and (max-width: 768px) {
   .skillset {
     .skillset__wrapper {
       padding-top: 8rem;
       padding-bottom: 8rem;
+
       .description {
         flex: 0 1 auto;
       }
+
       .skills {
         .skill {
           .text {
             max-width: 28.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .skillset {
+    .skillset__wrapper {
+      padding-top: 6.4rem;
+      padding-bottom: 6.4rem;
+      .description {
+        padding-right: 0;
+        .title {
+          @include heading_mobile();
+        }
+      }
+      .skills {
+        flex: 1 1;
+        .skill {
+          flex: 1 1 50%;
+          padding-right: 2.4rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 470px) {
+  .skillset {
+    .skillset__wrapper {
+      .skills {
+        flex-direction: column;
+        .skill {
+          padding-right: 0;
+          .text {
+            max-width: 100%;
           }
         }
       }
