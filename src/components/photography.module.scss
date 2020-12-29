@@ -34,9 +34,12 @@
       flex-wrap: wrap;
       gap: 2.4rem;
       > img {
+        display: block;
         height: 42rem;
         object-fit: cover;
-        flex: 1 0 auto;
+        flex: 1 1 30rem;
+        min-width: 28rem;
+        max-width: 100%;
         transition: 0.3s ease transform;
         &:hover {
           transform: scale(1.05);
@@ -54,9 +57,6 @@
         max-width: 100%;
       }
       .images {
-        margin-top: 4rem;
-        display: flex;
-        flex-wrap: wrap;
       }
     }
   }
@@ -80,9 +80,6 @@
           flex: 1 1;
           max-width: 14.8rem;
           margin: 1.2rem;
-          //&:nth-child(2n-1) {
-          //  margin-right: 2.4rem;
-          //}
         }
       }
     }

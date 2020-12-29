@@ -34,6 +34,7 @@
       flex-flow: column wrap;
       .testimonial {
         margin-bottom: 12rem;
+        overflow: hidden;
         .image {
           height: 36rem;
           object-fit: cover;
