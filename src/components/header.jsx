@@ -9,18 +9,23 @@ const Header = ({ siteTitle }) => {
 
   const [toggle, setToggle] = useState(false)
 
+  const setToggleFalse = () => {
+    setToggle(false)
+  }
+
   return <header className={styles.header}>
     <div className={styles.header__wrapper}>
+      {toggle && <div onClick={setToggleFalse} className={styles.backdrop}/>}
       <Link className={styles.logo}
             to="/">
         <img src={headerLogo} alt="" />
       </Link>
       <nav className={styles.nav}>
         <ul className={styles.list} style={toggle ? {top: 0} : {top: "-50rem"}}>
-          <li className={styles.item}><AnchorLink to={"/#experience"} title={"Experience"} /></li>
-          <li className={styles.item}><AnchorLink to={"/#projects"} title={"Work"} /></li>
-          <li className={styles.item}><AnchorLink to={"/#photography"} title={"Photography"} /></li>
-          <li className={styles.item}><AnchorLink to={"/#contacts"} title={"Contact"} /></li>
+          <li className={styles.item}><AnchorLink to={"/#experience"} title={"Experience"} onAnchorLinkClick={setToggleFalse} /></li>
+          <li className={styles.item}><AnchorLink to={"/#projects"} title={"Work"} onAnchorLinkClick={setToggleFalse} /></li>
+          <li className={styles.item}><AnchorLink to={"/#photography"} title={"Photography"} onAnchorLinkClick={setToggleFalse} /></li>
+          <li className={styles.item}><AnchorLink to={"/#contacts"} title={"Contact"} onAnchorLinkClick={setToggleFalse} /></li>
         </ul>
         <div className={styles.toggle} onClick={() => setToggle(!toggle)}>
 
