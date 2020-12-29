@@ -14,8 +14,8 @@ const Companies = () => {
 
   return (
     <section className={styles.companies}>
-      {companies.map( c => {
-        return <div className={styles.company}>
+      {companies.map( (c,i) => {
+        return <div key={i} className={styles.company}>
           <img src={c} alt="" />
         </div>
       })}

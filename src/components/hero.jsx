@@ -1,7 +1,6 @@
 import React from "react"
 import styles from "./hero.module.scss"
-import photo from "../images/hero/photo.png"
-import hero from "../images/hero/hero.png"
+import hero from "../images/hero/burningparrot-ydhYTvAx3-A-unsplash.png"
 
 
 const Hero = () => {

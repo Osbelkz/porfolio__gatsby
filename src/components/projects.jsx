@@ -40,8 +40,8 @@ const Projects = () => {
               <span>for the past 8 years</span>
             </h2>
           </div>
-          {projects.map(project => {
-            return <Project photo={project.photo} title={project.title} text={project.text} />
+          {projects.map((project, i) => {
+            return <Project key={i} photo={project.photo} title={project.title} text={project.text} />
           })}
           <div className={styles.tail}>
             <button className={styles.button}>VIEW ALL PROJECTS</button>

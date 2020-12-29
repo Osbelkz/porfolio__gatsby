@@ -50,7 +50,10 @@ const Photography = () => {
                 : styles.button
 
               return (
-                <button className={style} data-category={country} onClick={onButtonClick}>
+                <button key={country}
+                        className={style}
+                        data-category={country}
+                        onClick={onButtonClick}>
                 {country.toUpperCase()}
               </button>
               )
@@ -60,8 +63,8 @@ const Photography = () => {
 
         <div className={styles.images}>
           {
-            images[category].map(img => {
-              return <img src={img} alt="" />
+            images[category].map((img, i) => {
+              return <img key={i} src={img} alt="" />
             })
           }
         </div>

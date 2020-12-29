@@ -5,7 +5,16 @@ import meetingImage from "../images/testimonials/meeting.png"
 import discussionImage from "../images/testimonials/discussion.png"
 
 
+const Testomonial = () => {
+
+}
+
 const Testimonials = () => {
+
+  const testomonialsData = [
+    {}
+  ]
+
   return (
     <section className={styles.testimonials}>
       <div className={styles.testimonials__wrapper}>
