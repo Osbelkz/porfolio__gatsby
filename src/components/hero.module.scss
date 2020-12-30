@@ -33,6 +33,7 @@
         flex-direction: column;
         justify-content: center;
         color: $text;
+        z-index: 2;
         .title{
           @include h1();
           > span {

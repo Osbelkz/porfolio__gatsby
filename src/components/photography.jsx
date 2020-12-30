@@ -64,7 +64,7 @@ const Photography = () => {
         <div className={styles.images}>
           {
             images[category].map((img, i) => {
-              return <img key={i} src={img} alt="" />
+              return <img className={styles.image} key={i} src={img} alt="" />
             })
           }
         </div>
